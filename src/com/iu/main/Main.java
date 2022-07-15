@@ -1,28 +1,30 @@
 package com.iu.main;
 
-import com.iu.terran.Marine;
-import com.iu.zerg.Hydra;
+import com.iu.himart.Client;
+import com.iu.himart.Computer;
+import com.iu.himart.Phone;
+import com.iu.himart.Tv;
 
 public class Main {
 
 	public static void main(String[] args) {
-		//객체 생성	
-		Marine marine = new Marine();
-		marine.setHp(30);
-		marine.setColor("");
-		
-		//메서드 호출
-		marine.info();
-		
-		Hydra hydra = new Hydra();
-		hydra.setHp(50);
-		hydra.setColor("");
-		hydra.setName("");
-		
-		//메서드 호출
-		hydra.move();
-
 	
+	Computer com = new Computer();
+	com.info();
+	
+	Phone phone = new Phone();
+	phone.info();
+	
+	Tv tv = new Tv();
+	tv.info();
+	
+	Client client = new Client();
+	client.buy(tv);
 		
 	}//main
 }//class
+
+
+//105-24=81
+
+
