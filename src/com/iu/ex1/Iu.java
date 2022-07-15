@@ -4,6 +4,10 @@ public class Iu {
 	
 	private String name;
 	private int age;
+	//FixStudy
+	private String test;
+	
+	
 	
 	//기본생성자 생성
 	private Iu() {
