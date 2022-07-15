@@ -9,6 +9,9 @@ public abstract class Unit {	//abstract를 사용하면 객체를 생성하지 �
 	private String color;
 	private String name;
 	
+	public Unit() {
+		
+	}
 	
 	//생성자 생성
 	public Unit(int hp) {
@@ -18,6 +21,9 @@ public abstract class Unit {	//abstract를 사용하면 객체를 생성하지 �
 	
 	//공통 메서드
 	public abstract void move();	//abstract를 사용함으로써 완성되지않은 메서드에요 라고 표현함
+	
+	public abstract void attack();	//공격을 안하는 종족은?
+	
 	
 	//일반 메서드
 	public void info() {

@@ -3,6 +3,7 @@ package com.iu.main;
 import com.iu.terran.Marine;
 import com.iu.terran.Scv;
 import com.iu.unit.Unit;
+import com.iu.zerg.Hydra;
 
 public class Main {
 
@@ -15,8 +16,12 @@ public class Main {
 		//Scv is a Unit;
 		
 		Unit unit = marine;// 말이안됨 원래 근데 자바놈이 가능하게 해둠
-				unit = scv;
 		//상속관계에서만 가능하다
+
+		Hydra hydra = new Hydra();
+		
+		marine.attack();
+		hydra.attack();
 				
 		System.out.println(unit.getHp());
 		System.out.println(unit.getColor());

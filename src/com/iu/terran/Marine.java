@@ -1,8 +1,9 @@
 package com.iu.terran;
 
+import com.iu.unit.Attacker;
 import com.iu.unit.Unit;
 
-public class Marine extends Unit{	//public class 자식클래스 extends 부모클래스
+public class Marine extends Unit implements Attacker{	//public class 자식클래스 extends 부모클래스
 	
 	//클래스안에 abstract가 하나라도 있으면 추상클래스로 만들어주던가 body를 완성시켜줘라
 	
@@ -20,7 +21,7 @@ public class Marine extends Unit{	//public class 자식클래스 extends 부모�
 	//생성자를 호출해 그러니 unit이라는 생성자를 호출하고 자기자신의 생성자를 호출
 	
 	//애가 하는일은 메서도로 만들어줌
-	public void shoot() {
+	private void shoot() {
 		System.out.println("우다다다다다닫");
 	}
 
@@ -28,6 +29,11 @@ public class Marine extends Unit{	//public class 자식클래스 extends 부모�
 	public void move() {
 		System.out.println("나는 뛰어다니는 놈");
 	}
+	//오버라이딩
+	public void attack() {
+		
+	}
+	
 	//일반메서드와 같은 변수명의 메서드를 선언하면 중복인가? 아니 오버라이딩이다
 	public void info() {
 		//super.info();//부모의 info
