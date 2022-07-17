@@ -1,5 +1,7 @@
 package com.iu.main;
 
+import com.iu.util.CollectionQue;
+import com.iu.util.CollectionSet;
 import com.iu.util.CollectionStack;
 
 public class Main {
@@ -28,8 +30,17 @@ public class Main {
 			//remove -	삭제할 숫자를입력받아서 일치하는 숫자를 삭제	{2,3}
 		
 		CollectionStack cs = new CollectionStack();
-		 nums =cs.add(nums);
-		cs.remove(null);
+//		 nums = cs.add(nums);
+//		System.out.println(nums);
+//		nums = cs.remove(nums);
+		
+		CollectionQue cq = new CollectionQue();
+		//cq.add(nums);
+		//cq.remove(nums);
+		
+		CollectionSet cset = new CollectionSet();
+		nums=cset.add(nums);
+		//cset.remove(nums);
 		
 	}//main
 }//class
