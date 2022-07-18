@@ -11,6 +11,11 @@ public class Main {
 		//test data set
 		int[] nums = {1,2,3};
 		
+		String name = "test";
+		char c = name.charAt(0);
+		System.out.println(c);
+		
+		
 		
 		//1.com.iu.util.CollectionStack
 			//add,remove메소드가 들어가
@@ -39,7 +44,7 @@ public class Main {
 		//cq.remove(nums);
 		
 		CollectionSet cset = new CollectionSet();
-		nums=cset.add(nums);
+		//nums=cset.add(nums);
 		//cset.remove(nums);
 		
 	}//main

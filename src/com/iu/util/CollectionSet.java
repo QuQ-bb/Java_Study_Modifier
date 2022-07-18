@@ -16,32 +16,27 @@ public class CollectionSet {
 		int add = scan.nextInt();
 		
 		boolean check =false;
-		
-		for(int i=0; i< nums.length; i++) {
+		int i=0;
+		for(i=0; i< nums.length; i++) {
 			if(add != nums[i]) {
 				addNums[i]= nums[i];
 			}
+			nums =addNums;
+//
+//		for(i=0; i<nums.length; i++) {
+//			if(add ==nums[i]) {
+//				check =!check;
+//				System.out.println("중복된 숫자입니다.");
+//				System.out.print("{");
+//				for(int j=0; j<nums.length; j++) {
+//					System.out.print(nums[j]+" ");
+//				}//for
+//				System.out.print("}");
+//				break;
+//			}//if
+//		}//for
 		
-
-		for(int i=0; i<nums.length; i++) {
-			if(add ==nums[i]) {
-				check =!check;
-				System.out.println("중복된 숫자입니다.");
-				System.out.print("{");
-				for(int j=0; j<nums.length; j++) {
-					System.out.print(nums[j]+" ");
-				}//for
-				System.out.print("}");
-				break;
-			}//if
-		}//for
 		
-		nums =addNums;
-		if(check) {
-			
-			}
-			
-		}
 		
 //		for(int i=0; i<nums.length; i++) {
 //			System.out.println(nums[i]);
