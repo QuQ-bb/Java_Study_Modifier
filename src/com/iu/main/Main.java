@@ -45,7 +45,7 @@ public class Main {
 		
 		CollectionSet cset = new CollectionSet();
 		//nums=cset.add(nums);
-		//cset.remove(nums);
+		nums= cset.remove(nums);
 		
 	}//main
 }//class

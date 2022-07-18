@@ -18,9 +18,7 @@ public class CollectionSet {
 		boolean check =false;
 		int i=0;
 		for(i=0; i< nums.length; i++) {
-			if(add != nums[i]) {
 				addNums[i]= nums[i];
-			}
 			nums =addNums;
 //
 //		for(i=0; i<nums.length; i++) {
@@ -56,7 +54,8 @@ public class CollectionSet {
 		int num = scan.nextInt();
 		
 		boolean flag = false;
-			for(int s=0; s<nums.length; s++) {
+			int s=0;
+			for(s=0; s<nums.length; s++) {
 				if(num == nums[s]) {
 					flag=!flag;
 					break;
@@ -71,15 +70,14 @@ public class CollectionSet {
 		if(flag) {
 			int j=0;
 			for(int i=0; i<nums.length; i++) {
-				if(num == nums[i]) {
+				if(i == s) {
 					flag=!flag;
 					continue;
 				}//if문
 				delNums[j]= nums[i];
 				j++;
 			}//for문
-			
-		}
+		}//if문
 		
 		nums = delNums;
 		
