@@ -45,7 +45,7 @@ public class CollectionSet {
 		
 		
 		return nums;
-		
+		}
 	}//add
 	
 	public int[] remove(int[]nums) {
